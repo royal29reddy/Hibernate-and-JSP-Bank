@@ -1,25 +1,36 @@
 # Hibernate-and-JSP-Bank
 
-Hello Guys,
+Hello World!
 
-Hibernate and JSP Bank is a Dynamic web bank application developed with JSP, Hibernate, POJO and MySQL.
+# Project Overview
 
-I have used HTML and JSP for front end design and front end logic. POJO for connecting the connecting with the local server and Hibernate
-for having the relation with the proect and database by mapping the pojo objects.
+Hibernate and JSP Bank is a dynamic web banking application developed using JSP, Hibernate, POJO, and MySQL. The application allows users to perform essential banking operations such as:
+- Creating a user profile
+- Sending and receiving money
+- Depositing cheques
+- Checking account balances
+- Viewing and updating account information
 
-In this application, the services that a user can experience are 
+## The application employs the MVC (Model-View-Controller) architecture:
 
-  - Create a user profile into the database by entering their information
-  - Sending and receiving money from other users who are in the database by entering the other user's information.
-  - Depositing a cheque by entering the cheque number.
-  - Checking the account balance.
-  - View and Updating the account information.
+Model: Java POJOs mapped to database tables using Hibernate
+View: JSP files for the user interface
+Controller: Servlets handling business logic and request processing
 
-Everytime a user performs one of the above operations, hibernate maps those respective fields with the database objects and displays the
-corresponding results.
+## Tech Stack
 
-MVC Architecture is implemented in this project where the operations of the application is written in controller package and database
-operations are written in model and the interactive part of the program will be displayed with the help of JSP files.
+- Frontend: HTML, JSP
+- Backend: Java (Servlets, POJOs)
+- ORM: Hibernate
+- Database: MySQL
+- Architecture: MVC (Model-View-Controller)
 
-Some of the other concepts that were included in this application are regular expressions for mobile number validation, amount
-while doing a transaction and cheque number while depositing a cheque.
+## Features
+
+- User Registration: Users can create profiles by entering personal information.
+- Fund Transfer: Send and receive money between users by providing recipient details.
+- Cheque Deposit: Deposit funds by entering a valid cheque number.
+- Balance Inquiry: View current account balance.
+- Profile Management: Update existing account information.
+- Input Validation: Utilizes regular expressions to validate mobile numbers, transaction amounts, and cheque numbers.
+- Database Mapping: Hibernate maps POJO classes to database tables, ensuring seamless data persistence.
